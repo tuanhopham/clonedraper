@@ -20,6 +20,7 @@ const Box = styled.div`
 const Logo = styled.img`
    display: inline-flex;
    height: 100%;
+   cursor: pointer;
 `;
 const ListItems = styled.ul`
    display: flex;

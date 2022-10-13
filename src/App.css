@@ -36,3 +36,33 @@ body {
 
    font-family: 'Oxygen', sans-serif;
 }
+
+/* Thư viện Slick slide */
+
+.slick-slide > div {
+   padding: 30px 15px 0;
+}
+
+.slick-list {
+   margin: 0 -15px !important;
+}
+.slick-prev {
+   left: auto !important;
+   right: 70px !important;
+}
+.slick-next {
+   right: 0 !important;
+}
+.slick-prev,
+.slick-next {
+   background: rgba(23, 41, 64, 0.8) !important;
+   width: 60px !important;
+   height: 60px !important;
+   top: -140px !important;
+   text-align: center;
+}
+.slick-prev:before,
+.slick-next:before {
+   font-size: 33px !important;
+   line-height: 2 !important;
+}

@@ -5,7 +5,7 @@ const Button = styled.button`
    background: ${(props) => (props.primary ? 'RGB(24, 45, 74)' : props.orange ? '#FFCC00' : '')};
    color: ${(props) => (props.primary ? 'white' : props.orange ? '#2A2A2A' : '')};
    padding: ${(props) => (props.min ? '9px 35px' : ' 18px 35px')};
-   border: none;
+   border: ${(props) => (props.boder ? '1px solid var(--primary)' : ' none')};
    border-radius: 25px;
    font-weight: 700;
    margin: auto;

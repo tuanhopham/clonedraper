@@ -59,6 +59,7 @@ const H3Text = styled.h3`
    color: #232327;
 `;
 const GridTwoCol = styled.div`
+   margin: 150px 0 50px;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
 `;

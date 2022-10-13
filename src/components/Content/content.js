@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import AboutUs from './aboutUs/aboutUs';
 import Academy from './academy/academy';
 import Services from './services/services';
 import Ventures from './ventures/ventures';
@@ -20,8 +21,9 @@ function Content() {
          <DiffBackground>
             <Services></Services>
          </DiffBackground>
-
-         <div className="AboutUs"></div>
+         <Padding>
+            <AboutUs></AboutUs>
+         </Padding>
       </div>
    );
 }

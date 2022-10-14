@@ -6,7 +6,11 @@ import pic03 from '~/assets/img/aboutus03.jpg';
 import pic04 from '~/assets/img/aboutus04.jpg';
 import pic05 from '~/assets/img/aboutus05.jpg';
 
-const AboutUsSection = styled.div``;
+const AboutUsSection = styled.div`
+   @media (max-width: 430px) {
+      padding-bottom: 150px;
+   }
+`;
 const Padding = styled.div`
    padding: 0 15px 10px;
 `;
@@ -16,6 +20,9 @@ const Header = styled.div`
    height: 240px;
    padding: 64px 0;
    text-align: center;
+   @media (max-width: 430px) {
+      padding: 14% 0;
+   }
 `;
 const HeaderText = styled.h1`
    font-style: normal;
@@ -26,6 +33,10 @@ const HeaderText = styled.h1`
    text-transform: uppercase;
    color: #ffffff;
    font-family: var(--body-fonts);
+   @media (max-width: 430px) {
+      font-size: 35px;
+      line-height: 35px;
+   }
 `;
 const GridThreeCol = styled.div`
    margin-top: 50px;
@@ -33,6 +44,9 @@ const GridThreeCol = styled.div`
    grid-template-columns: repeat(3, 1fr);
    gap: 2%;
    text-align: start;
+   @media (max-width: 430px) {
+      grid-template-columns: 1fr;
+   }
 `;
 const TextContent = styled.h1`
    font-family: var(--body-fonts);
@@ -43,6 +57,10 @@ const TextContent = styled.h1`
    letter-spacing: -0.015em;
    text-transform: uppercase;
    color: var(--primary);
+   @media (max-width: 430px) {
+      font-size: 70px;
+      line-height: 70px;
+   }
 `;
 const SubText = styled.p`
    font-style: normal;
@@ -51,6 +69,9 @@ const SubText = styled.p`
    line-height: 26px;
    margin-left: 20%;
    color: rgba(35, 35, 39, 0.8);
+   @media (max-width: 430px) {
+      margin: auto;
+   }
 `;
 const Btn = styled.div`
    text-align: end;
@@ -61,6 +82,9 @@ const Hr = styled.hr`
    height: 10px;
    background: #e9ecf1;
    opacity: 0.7;
+   @media (max-width: 430px) {
+      height: 2px;
+   }
 `;
 const ItemBox = styled.div`
    width: 100%;

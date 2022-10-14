@@ -4,6 +4,9 @@ import logo from '~/assets/img/footerlogo.jpg';
 
 const Padding = styled.div`
    padding: 0 40px 0 120px;
+   @media (max-width: 430px) {
+      padding: 30px 0;
+   }
 `;
 const BannerBox = styled.div`
    bottom: 0;
@@ -13,6 +16,9 @@ const BannerBox = styled.div`
    height: 377px;
    text-align: center;
    margin: 100px 0;
+   @media (max-width: 430px) {
+      padding: 50px 12px;
+   }
 `;
 const HeaderText = styled.h1`
    display: block;
@@ -26,10 +32,18 @@ const HeaderText = styled.h1`
    color: #ffffff;
    font-family: var(--body-fonts);
    text-align: center;
+   @media (max-width: 430px) {
+      font-size: 46px;
+      line-height: 46px;
+   }
 `;
 const LayoutGrid = styled.div`
    display: grid;
    grid-template-columns: 10% 90%;
+   @media (max-width: 430px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+   }
 `;
 const Logo = styled.img`
    width: 64px;
@@ -39,10 +53,16 @@ const Logo = styled.img`
 const Grid27 = styled.div`
    display: grid;
    grid-template-columns: 20% 80%;
+   @media (max-width: 430px) {
+      grid-template-columns: 1fr;
+   }
 `;
 const Grid55 = styled.div`
    display: grid;
    grid-template-columns: 50% 50%;
+   @media (max-width: 430px) {
+      grid-template-columns: 1fr;
+   }
 `;
 const GridThreeCol = styled.div`
    margin-top: 25px;
@@ -50,6 +70,10 @@ const GridThreeCol = styled.div`
    column-gap: 15px;
    row-gap: 10px;
    grid-template-columns: repeat(3, 1fr);
+   @media (max-width: 430px) {
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 15px;
+   }
 `;
 const GridFiveCol = styled.div`
    margin-top: 25px;
@@ -57,6 +81,9 @@ const GridFiveCol = styled.div`
    column-gap: 15px;
    row-gap: 10px;
    grid-template-columns: repeat(5, 1fr);
+   @media (max-width: 430px) {
+      grid-template-columns: 1fr 1fr;
+   }
 `;
 const Text = styled.p`
    margin: 0 0 8px;
@@ -82,6 +109,9 @@ const BigText = styled.h3`
 const Hr = styled.hr`
    margin: 20px 0;
    width: ${(props) => (props.min ? '50px' : ' 90%')};
+   @media (max-width: 430px) {
+      margin: 20px auto;
+   }
 `;
 const Link = styled.a`
    text-decoration-line: underline;

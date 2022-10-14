@@ -15,11 +15,20 @@ const TextContent = styled.h1`
    line-height: 90px;
    font-family: var(--body-fonts);
    color: #204370;
+   @media (max-width: 430px) {
+      width: 100%;
+      font-size: 70px;
+      line-height: 70px;
+      margin: 50px 0 48px;
+   }
 `;
 const GridBox = styled.div`
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: 4%;
+   @media (max-width: 430px) {
+      grid-template-columns: 1fr;
+   }
 `;
 const ItemBox = styled.div`
    height: 264px;
@@ -29,6 +38,9 @@ const ItemBox = styled.div`
    opacity: 0.7;
    &:hover {
       opacity: 1;
+   }
+   @media (max-width: 430px) {
+      width: 95%;
    }
 `;
 const FlexBoxSB = styled.div`
@@ -62,6 +74,9 @@ const GridTwoCol = styled.div`
    margin: 150px 0 50px;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
+   @media (max-width: 430px) {
+      grid-template-columns: 1fr;
+   }
 `;
 const Left = styled.div`
    width: 100%;
@@ -84,6 +99,9 @@ const SubContent = styled.p`
    font-size: 16px;
    line-height: 26px;
    color: rgba(35, 35, 39, 0.8);
+   @media (max-width: 430px) {
+      margin-bottom: 10px;
+   }
 `;
 function Academy() {
    return (

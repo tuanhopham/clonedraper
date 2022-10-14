@@ -9,7 +9,10 @@ const Button = styled.button`
    border-radius: 25px;
    font-weight: 700;
    margin: auto;
+   overflow: hidden;
    cursor: pointer;
+   position: relative;
+
    &:hover {
       opacity: 0.9;
    }

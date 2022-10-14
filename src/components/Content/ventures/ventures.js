@@ -7,6 +7,9 @@ import Button from '~/components/Button/button';
 const VenturesSection = styled.div`
    background: #f4f6f8;
    padding: 130px 0 100px;
+   @media (max-width: 430px) {
+      padding: 30px 0 50px;
+   }
 `;
 const TextContent = styled.h1`
    width: 70%;
@@ -18,12 +21,27 @@ const TextContent = styled.h1`
    font-family: var(--body-fonts);
    color: #204370;
    text-align: center;
+   @media (max-width: 430px) {
+      margin: 0 auto 50px;
+
+      width: 90%;
+      font-size: 75px;
+      line-height: 75px;
+   }
 `;
 const BoxGrid = styled.div`
    display: grid;
    grid-template-columns: 1fr 1fr;
    width: 100%;
    row-gap: 150px;
+   @media (max-width: 430px) {
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+      &:nth-child(3) {
+         grid-column-start: 2;
+         grid-column-end: 4;
+      }
+   }
 `;
 const ShadowImage = styled.div`
    width: 90%;
@@ -31,6 +49,17 @@ const ShadowImage = styled.div`
    position: relative;
    background: ${(props) => (props.green ? '#5CC68F' : props.yellow ? '#FFCC00' : '#4c8fcc')};
    left: ${(props) => (props.right ? '10%' : ' 0')};
+   @media (max-width: 430px) {
+      height: 250px;
+      &:nth-of-type(1) {
+      }
+      &:nth-of-type(2) {
+         grid-row: 1;
+      }
+      &:nth-of-type(3) {
+         grid-row: 3;
+      }
+   }
 `;
 const VenturesImage = styled.img`
    width: 100%;
@@ -44,6 +73,16 @@ const VenturesContent = styled.div`
    flex-direction: column;
    margin: 0 auto;
    width: 444px;
+   @media (max-width: 430px) {
+      width: 80%;
+      &:nth-of-type(1) {
+      }
+      &:nth-of-type(2) {
+      }
+      &:nth-of-type(3) {
+         grid-row: 4;
+      }
+   }
 `;
 const H2Text = styled.h2`
    font-family: var(--body-fonts);
@@ -60,6 +99,9 @@ const P2Text = styled.p`
    line-height: 26px;
    color: rgba(35, 35, 39, 0.7);
    padding: 24px 0;
+   @media (max-width: 430px) {
+      padding: 10px 0;
+   }
 `;
 const ListText = styled.ul`
    padding-left: 30px;
@@ -79,6 +121,9 @@ const TextItem = styled.li`
 const BoxButton = styled.div`
    margin: 100px auto 0;
    text-align: center;
+   @media (max-width: 430px) {
+      margin: 20px auto 0;
+   }
 `;
 function Ventures() {
    return (

@@ -33,6 +33,12 @@ const TextContent = styled.h1`
    margin: 25px auto;
    text-transform: uppercase;
    font-family: var(--body-fonts);
+   @media (max-width: 430px) {
+      width: 100%;
+      margin: 0;
+      font-size: 50px;
+      line-height: 50px;
+   }
 `;
 const SubContent = styled.p`
    width: 346px;
@@ -40,6 +46,10 @@ const SubContent = styled.p`
    font-size: 16px;
    line-height: 26px;
    margin: 0 auto 30px;
+   @media (max-width: 430px) {
+      font-weight: 400;
+      width: 320px;
+   }
 `;
 function Banner() {
    return (
